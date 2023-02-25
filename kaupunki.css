@@ -1,0 +1,51 @@
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #333; /* Change to your desired color */
+  }
+
+.aloitus.bg-image {
+    background-image: url('lumilautailu.webp');
+    height: 100vh;
+    opacity: 0.8;
+  }
+
+  .aloitus p{
+    max-width: 40%;
+  }
+
+  .aloitus {
+    position: relative;
+  }
+  
+  .aloitus p {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 46px;
+    font-weight: bolder;
+  }
+
+.aloitus .bg-image {
+    height: 100vh;
+    position: relative;
+}
+
+.tutustu-nappi {
+    position: absolute;
+    border: none;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+  
+.tutustu-nappi a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
