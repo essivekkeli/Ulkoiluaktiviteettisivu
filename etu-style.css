@@ -1,25 +1,69 @@
-body,html {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            font-family: Arial;
-        }
 
         
-        nav{
-            width: 100%;
-            position: fixed;
+        .navbar-nav li.nav-item a.nav-link:hover {
+            color: #333; /* Change to your desired color */
+          }
+       
+        .aloitus.bg-image {
+            background-image: url('lumilautailu.webp');
+            height: 100vh;
+            opacity: 0.8;
+          }
+
+          .aloitus p{
+            max-width: 40%;
+          }
+
+          .aloitus {
+            position: relative;
+          }
+          
+          .aloitus p {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
             z-index: 1;
-            background-color: #5e89ad;
+            font-size: 46px;
+            font-weight: bolder;
+          }
+
+        .aloitus .bg-image {
+            height: 100vh;
+            position: relative;
+        }
+          
+        .tutustu-nappi {
+            position: absolute;
+            border: none;
+            top: 70%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+          
+        .tutustu-nappi a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
         }
 
-        section {
+
+
+        /* section {
             width: 100%;
             height: 800px;
             float:left;
         }
+        section footer{
+            background-color: #709bc6;
+        }
         
-        #esittely{background-color: #cdad7d; }
+        #esittely{background-color: #f4f1ec; }
         #esittely h1 {
             padding: 60px 0;
             font-size: 35px;
@@ -28,12 +72,11 @@ body,html {
         #esittely p {
             margin: auto;
             width: 60%;
-           
             font-size: 20px;
             text-align: center;
         }
 
-        #kategoriat{background-color: #cdad7d;}
+        #kategoriat{background-color: #f4f1ec;}
         #kategoriat h1{
             padding: 60px 0;
             font-size: 35px;
@@ -44,14 +87,13 @@ body,html {
             float: left;
             width: 1/3;
             padding: 10px;
-            height: 300px;
+            height: 550px;
         }
         .rivi:after{
             content: "";
             display: table;
             clear:both;
         }
-        footer 
 
         #kartta{background-color: #d6e6a3;text-align: center;}
         #kartta h1{
@@ -62,9 +104,18 @@ body,html {
 
         footer{
             background-color: #f4f1ec;
+            
         }
         footer h1 p {
             margin: 30px;
+        }
+        footer h1 {
+            margin: 30px;
+        }
+
+        footer ul {
+            margin: auto;
+            width: 90%;
         }
 
 
@@ -94,10 +145,10 @@ body,html {
 
         
         .aloitus {
-            background-color: #cdad7d;
-            /* Full height */
+            background-color: #f4f1ec;
+   
             height: 100%;
-            /* Center and scale the image nicely */
+         
             background-position:center;
             background-repeat: no-repeat;
             background-size: 
@@ -133,4 +184,4 @@ body,html {
         }
         button:hover{
             background-color: #183C5B;
-        }
+        }*/
