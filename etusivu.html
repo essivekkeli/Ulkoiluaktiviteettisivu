@@ -14,66 +14,67 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
         <a class="navbar-brand" href="#">EV ACTIVE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/etusivu.html">KOTI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/jarvi.html">JÄRVELLÄ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/metsa.html">METSÄSSÄ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/kaupunki.html">KAUPUNGISSA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/palaute.html">PALAUTE</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/etusivu.html">KOTI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/jarvi.html">JÄRVELLÄ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/metsa.html">METSÄSSÄ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/kaupunki.html">KAUPUNGISSA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/palaute.html">PALAUTE</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      
-      <script>
+    </nav>
+
+    <script>
         var navbarToggler = document.querySelector(".navbar-toggler");
         var navbarCollapse = document.querySelector(".navbar-collapse");
-      
+
         navbarToggler.addEventListener("click", function () {
-          navbarCollapse.classList.toggle("show");
+            navbarCollapse.classList.toggle("show");
         });
-      </script>
-      
+    </script>
 
-      <section class="aloitus" id="koti">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="aloitus bg-image" style="background-image: url('lumilautailu.webp'); height: 100vh;"></div>
-            </div>
-            <div class="col-md-12">
-              <p>Tervetuloa tutustumaan monipuoliseen aktiviteettitarjontaamme!</p>
-              <button class="tutustu-nappi"><a href="#kategoriat">TUTUSTU</a></button>
-            </div>
-          </div>
+
+    <!-- Ensimmäinen näkymä -->
+
+    <div class="koti">
+        <div class="landing">
+            <h1>Tervetuloa tutustumaan monipuoliseen aktiviteettitarjontaamme!</h1>
+            <!-- <a href="#esittely" class="btn btn-default btn-lg">TUTUSTU</a> -->
+            <button class="tutustu-nappi btn-default btn-lg"><a href="#esittely">TUTUSTU</a></button>
         </div>
-      </section>
-<!-- 
-    <section class="aloitus" id="koti">
+    </div>
+ 
+    <!-- <section class="aloitus" id="koti">
         <div class="container-fluid">
-            <div class="aloitus bg-image" style="background-image: url('lumilautailu.webp');
-                height: 100vh">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aloitus bg-image" style="background-image: url('lumilautailu.webp'); height: 100vh;">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <p class="lead">Tervetuloa tutustumaan monipuoliseen aktiviteettitarjontaamme!</p>
+                    <button class="tutustu-nappi"><a href="#esittely">TUTUSTU</a></button>
+                </div>
             </div>
-            <p>Tervetuloa tutustumaan monipuoliseen aktiviteettitarjontaamme!</p>
-            <button class="tutustu-nappi"><a href="#kategoriat">TUTUSTU</a></button>
         </div>
-    </section> -->
+    </section>  -->
 
-
+    <!-- Esittelynäkymä -->
     <section class="esittely-osa" id="esittely">
         <div class="container text-center">
             <div class="rivi">
@@ -112,8 +113,7 @@
                 <h2 class="kategoriat-title">Aktiviteettikategoriat</h2>
             </div>
             <div class="row mb-3">
-                <div class="col-lg-3 col-md-6">
-
+                <div class="col-sm">
                     <h4 class="mb-1">
                         <strong>Järvellä</strong>
                     </h4>
@@ -121,11 +121,10 @@
                         Tutustu järviulkoiluaktivitteetteihin! Klikkaamalla kuvaa saat lisätietoja.
                     </p>
                     <span class="luistelukuva mx-auto mb-3">
-                        <img src="luistelu.jfif">
+                        <a href="file:///C:/temp/Ulkoiluaktiviteettisivu/jarvi.html"><img src="luistelu.jfif"></a>
                     </span>
                 </div>
-                <div class="col-lg-3 col-md-3">
-
+                <div class="col-sm">
                     <h4 class="mb-1">
                         <strong>Metsässä</strong>
                     </h4>
@@ -133,11 +132,10 @@
                         Tutustu metsäulkoiluaktivitteetteihin! Klikkaamalla kuvaa saat lisätietoja.
                     </p>
                     <span class="luistelukuva mx-auto mb-3">
-                        <img src="hiihtäjä lapsi.jfif">
+                        <a href="file:///C:/temp/Ulkoiluaktiviteettisivu/metsa.html"><img src="hiihtäjä lapsi.jfif"></a>
                     </span>
                 </div>
-                <div class="col-lg-3 col-md-6">
-
+                <div class="col-sm">
                     <h4 class="mb-1">
                         <strong>Kaupungissa</strong>
                     </h4>
@@ -145,39 +143,38 @@
                         Tutustu kaupunkiulkoiluaktivitteetteihin! Klikkaamalla kuvaa saat lisätietoja.
                     </p>
                     <span class="luistelukuva mx-auto mb-3">
-                        <img src="ulkosali.jfif">
+                        <a href="file:///C:/temp/Ulkoiluaktiviteettisivu/kaupunki.html"><img src="ulkosali.jfif"></a>
                     </span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Karttaosa -->
     <section class="kartta-osa" id="kartta">
         <div class="container text-center">
             <div class="content-section-heading">
                 <h2 class="kategoriat-title">Etsi aktiviteettia sijainnin mukaan!</h2>
             </div>
-            <div class="embed-responsive embed-responsive-21by9">
-                <iframe class="embed-responsive-map"
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="100%" height="550" class="embed-responsive-item"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17422.017660141722!2d27.68572858715859!3d62.89115964656398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1677176478060!5m2!1sfi!2sfi"
-                    width="800" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                    allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
-    <section class="Yhteystiedot" id="contact">
+
+    <section class="yhteystiedot" id="contact">
         <div class="rivi">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
                 <h2>Yhteystiedot</h2>
                 <ul>
                     <li style="list-style-image: url('puhelin.png')">+358 444 555 7854</li><br>
                     <li style="list-style-image: url('email.png')">kaupunki@info.com</li><br>
-                    <li style="list-style-image: url('form.png')">Anna palautetta</li><br>
+                    <li style="list-style-image: url('form.png')"><a href="file:///C:/temp/Ulkoiluaktiviteettisivu/palaute.html">Anna palautetta</a></li><br>
 
                 </ul>
-
             </div>
         </div>
     </section>

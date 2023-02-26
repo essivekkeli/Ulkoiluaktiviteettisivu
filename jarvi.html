@@ -14,71 +14,173 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
         <a class="navbar-brand" href="#">EV ACTIVE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/etusivu.html">KOTI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/jarvi.html">JÄRVELLÄ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/metsa.html">METSÄSSÄ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/kaupunki.html">KAUPUNGISSA</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/palaute.html">PALAUTE</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/etusivu.html">KOTI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/jarvi.html">JÄRVELLÄ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/metsa.html">METSÄSSÄ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/kaupunki.html">KAUPUNGISSA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="file:///C:/temp/Ulkoiluaktiviteettisivu/palaute.html">PALAUTE</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      
-      <script>
+    </nav>
+
+    <script>
         var navbarToggler = document.querySelector(".navbar-toggler");
         var navbarCollapse = document.querySelector(".navbar-collapse");
-      
+
         navbarToggler.addEventListener("click", function () {
-          navbarCollapse.classList.toggle("show");
+            navbarCollapse.classList.toggle("show");
         });
-      </script>
+    </script>
 
+     <!-- Ensimmäinen näkymä -->
 
-<section class="aloitus" id="koti">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aloitus bg-image" style="background-image: url('melonta2.jpg'); height: 100vh;"></div>
+     <div class="koti">
+        <div class="landing">
+            <h1>Tervetuloa tutustumaan monipuoliseen aktiviteettitarjontaamme!</h1>
+            <!-- <a href="#esittely" class="btn btn-default btn-lg">TUTUSTU</a> -->
+            <button class="tutustu-nappi btn-default btn-lg"><a href="#esittely">TUTUSTU</a></button>
         </div>
-        <div class="col-md-12">
-          <p>Tervetuloa tutustumaan monipuoliseen aktiviteettitarjontaamme!</p>
-          <button class="tutustu-nappi"><a href="#kategoriat">TUTUSTU</a></button>
-        </div>
-      </div>
     </div>
-  </section>
 
 
-    <section class="Yhteystiedot" id="contact">
-        <div class="rivi">
-            <div class="col-lg-8">
-                <h2>Yhteystiedot</h2>
-                <ul>
-                    <li style="list-style-image: url('puhelin.png')">+358 444 555 7854</li>
-                    <li style="list-style-image: url('email.png')">kaupunki@info.com</li>
-                    <li style="list-style-image: url('form.png')">Anna palautetta</li>
-    
-                </ul>
-
+    <section class="aloitus" id="koti">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aloitus bg-image" style="background-image: url('järvi.jpg'); height: 100vh;"></div>
+                </div>
+                <div class="col-md-12">
+                    <h1>Tutustu järviulkoiluaktiviteetteihin</h1>
+                    <p>Järviulkoilu on erittäin suosittua ja rentouttavaa toimintaa. Voit valita monia erilaisia
+                        aktiviteetteja, kuten melontaa, uimista ja retkeilyä. Se on myös loistava tapa viettää aikaa
+                        ystävien tai perheen kanssa ja jakaa kokemuksia luonnossa. Järviulkoilu tarjoaa myös
+                        mahdollisuuden rentoutua ja päästää irti arjen paineista, sillä luonnon raikkaassa ilmassa ja
+                        rauhallisessa ympäristössä on helppo rentoutua ja uudistua. Lisäksi se on hyvä tapa parantaa
+                        fyysistä ja henkistä terveyttä, sillä ulkoilu ja liikunta auttavat vahvistamaan kehoa ja mielen
+                        järkkymättömäksi. </p>
+                    <button class="tutustu-nappi"><a href="#kategoriat">TUTUSTU</a></button>
+                </div>
             </div>
         </div>
     </section>
 
-    </body>
+    <section class="steps container-custom">
+
+        <div class="rivi">
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+                <img src="luistinkuva.jpg" alt="Luistelu" class="img-fluid pd-4 steps__section-thumbnail" width="600"
+                    height="600" loading="lazy">
+            </div>
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+                <dic class="steps__content-width">
+                    <h1 class="mb-4">Luistelu</h1>
+                    <p class="mb-4">Retkiluistelu tarjoaa mahdollisuuden rentoutua ja nauttia liikunnasta ulkoilmassa.
+                        Se voi olla
+                        erittäin hyvä kuntoilulaji, sillä se kehittää taitoa ja koordinaatiota sekä vahvistaa jalkoja ja
+                        reisilihaksia. Retkiluistelu on myös erinomainen tapa tutustua uusiin paikkoihin ja kokea uusia
+                        maisemia.
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of</p>
+                </dic>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="steps container-custom">
+
+        <div class="rivi">
+
+            <div class="col--12 col-sm-6 align-self-center justify-content-md-center">
+                <dic class="steps__content-width">
+                    <h1 class="mb-4">Melonta</h1>
+                    <p class="mb-4">Melonta on vesiurheilulaji, jossa käytetään erilaisten kanootin tai kajakin
+                        kaltaisten alusten avulla liikkumiseen lihaksia ja melaa. Melonta on yleensä harrastus, mutta
+                        sitä voidaan myös käyttää kilpailuihin ja seikkailumatkailuun.
+
+                        Melonta on monipuolinen laji, joka tarjoaa monia erilaisia ​​tyylejä ja tekniikoita. Jotkut
+                        melontamuodoista sisältävät rentouttavan virran laskemisen, suoraviivaisen vesillä etenemisen,
+                        valtavien aaltojen surffaamisen tai valaiden bongaamisen. Melonta voi olla myös rauhoittavaa ja
+                        meditatiivista, kun sitä harrastetaan luonnonkauniissa ympäristössä.
+
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. I</p>
+                </dic>
+            </div>
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+                <img src="melonta.jpg" alt="Melonta" class="img-fluid pd-4 steps__section-thumbnail" width="600"
+                    height="600" loading="lazy">
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <section class="steps container-custom">
+
+        <div class="rivi">
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-center">
+                <img src="uiminen.webp" alt="Uiminen" class="img-fluid pd-4 steps__section-thumbnail" width="600"
+                    height="600" loading="lazy">
+            </div>
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+                <dic class="steps__content-width">
+                    <h1 class="h1 mb-4">Melonta</h1>
+                    <p class="mb-4">Uiminen on monipuolinen liikuntalaji ja harrastus, joka tarjoaa useita terveys- ja
+                        hyvinvointihyötyjä. Se on yksi parhaimmista liikuntamuodoista kaikenikäisille, ja se sopii
+                        erinomaisesti rentoutumiseen ja stressin vähentämiseen. Uiminen tarjoaa useita terveyshyötyjä,
+                        kuten parantaa fyysistä kuntoa, lisää lihasvoimaa ja nopeutta, vähentää stressiä ja rentouttaa
+                        kehoa. Uiminen on myös hyvä tapa parantaa sydän- ja verisuoniterveyttä, ja se voi auttaa
+                        vähentämään riskiä sairastua sydän- ja verisuonisairauksiin.
+                        Kaupunki tarjoaa laajat uimamahdollisuudet julkisilla rannoillaan kesäisin. Kaupungissa toimii
+                        talviuimareiden seura, jonka suosio on viime aikoina kasvanut räjähdysmäisesti. Kannattaakin
+                        heti liittyä seuran jonotuslistalle, mikäli talviuinti on sinun juttusi.</p>
+                </dic>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="yhteystiedot" id="contact">
+        <div class="rivi">
+            <div class="col-lg-12">
+                <h2>Yhteystiedot</h2>
+                <ul>
+                    <li style="list-style-image: url('puhelin.png')">+358 444 555 7854</li><br>
+                    <li style="list-style-image: url('email.png')">kaupunki@info.com</li><br>
+                    <li style="list-style-image: url('form.png')"><a href="file:///C:/temp/Ulkoiluaktiviteettisivu/palaute.html">Anna palautetta</a></li><br>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
 
 </html>
