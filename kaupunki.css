@@ -1,70 +1,137 @@
+.navbar-brand{
+  padding-left: 20px;
+}
+.navbar-nav{
+  padding-left: 20px;
+}
 .navbar-nav li.nav-item a.nav-link:hover {
-    color: #333; /* Change to your desired color */
-  }
-
-.aloitus.bg-image {
-    background-image: url('lumilautailu.webp');
-    height: 100vh;
-    opacity: 0.8;
-  }
-
-  .aloitus p{
-    max-width: 40%;
-  }
-
-  .aloitus {
-    position: relative;
-  }
-  
-  .aloitus p {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    font-size: 46px;
-    font-weight: bolder;
-  }
-
-.aloitus .bg-image {
-    height: 100vh;
-    position: relative;
+  color: #333; 
 }
 
-.tutustu-nappi {
-    position: absolute;
-    border: none;
-    top: 70%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-  
-.tutustu-nappi a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
+.col-md-6 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
+.koti {
+  padding-left: 8px;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+.koti::before {
+  position: absolute;
+  content: "";
+  background: url('kaupuki.jpg') no-repeat center center fixed;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height:  auto;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0.55;
+  z-index: -1;
+}
+
+
+.koti a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mt-2 {
+  padding-left: 50%;
+}
+
+.koti a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.col-sm {
+  text-align: center;
+}
+
+.esittely-osa h1{
+  padding-top: 100px;
+  padding-bottom: 20px; 
+}
+.esittely-osa p{
+
+  font-size: 20px;
+}
+
+
+.parkour {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.parkour h2 {
+  text-align: center;
+}
+
+
+.container p {
+  font-size: 20px;
+}
+
+.golf {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.golf h2 {
+  text-align: center;
+}
+
+.urheilu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.urheilu h2 {
+  text-align: center;
+}
+
+.laskettelu {
+  padding-top: 60px;
+  padding-bottom:60px;
+}
+
+.laskettelu h2 {
+  text-align: center;
+}
+
+.laskettelukuva img{
+  width: 67%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .yhteystiedot h2{
-    text-align: left;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 ul {
-     text-align: left;
-     list-style-position: inside;
+   text-align: left;
+   list-style-position: inside;
 }
 
 li a {
-    text-decoration: none;
-    font-weight:bold;
+  text-decoration: none;
+  font-weight:bold;
 }

@@ -1,0 +1,88 @@
+.navbar-brand{
+    padding-left: 20px;
+  }
+  
+  .navbar-nav{
+    padding-left: 20px;
+  }
+  .navbar-nav li.nav-item a.nav-link:hover {
+    color: #333; 
+  }
+  
+  
+  .koti {
+    padding-left: 8px;
+    position: relative;
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+  .koti::before {
+    position: absolute;
+    content: "";
+    background: url('järvi.jpg') no-repeat center center fixed;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:  auto;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.55;
+    z-index: -1;
+  }
+
+  .esittely-osa h1{
+    padding-top: 100px;
+    padding-bottom: 20px; 
+  }
+  .esittely-osa p{
+    font-size: 20px;
+  }
+
+  .palauteteksti h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+
+  .palaute {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+  }
+
+  .form-group {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .form-check{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .yhteystiedot h2{
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  
+  ul {
+     text-align: left;
+     list-style-position: inside;
+  }
+  
+  li a {
+    text-decoration: none;
+    font-weight:bold;
+  }
+  
+
