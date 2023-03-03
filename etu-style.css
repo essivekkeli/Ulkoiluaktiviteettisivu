@@ -1,74 +1,58 @@
-
         .navbar-brand{
             padding-left: 20px;
         }
-        
         .navbar-nav{
             padding-left: 20px;
         }
         .navbar-nav li.nav-item a.nav-link:hover {
-            color: #333; /* Change to your desired color */
+            color: #333; 
           }
     
         .koti {
+            padding-left: 20px;
             position: relative;
-            height: 800px;
+            min-height: 100vh;
             width: 100%;
-            display: table;
-            
+            display: flex;
             align-items: center;
             justify-content: center;
-         
+            background-size: cover;
         }
 
         .koti::before {
+            position: absolute;
             content: "";
             background: url('lumilautailu.webp') no-repeat center center fixed;
-            background-size: cover;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;left: 0px;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height:  auto;
+            transform: translateX(-50%) translateY(-50%);
             opacity: 0.55;
+            z-index: -1;
          
         }
 
-
-        .landing {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle;
-        }
-       
-        .landing h1 {
-           
-            position: relative;
-            width: 40%;
-            padding-left: 30px;
-            
-            
-
-        }
-
-        .tutustu-nappi {
-            position: absolute;
-        
-            top: 65%;
-            left: 25%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-        }
-          
-        .tutustu-nappi a {
+        .koti a {
             display: inline-block;
             padding: 10px 20px;
             background-color: #fff;
             color: #000;
             text-decoration: none;
             font-weight: bold;
-            font-size: 20px;
         }
 
+        .koti a:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .col-sm {
+            text-align: center;
+            
+        }
 
         .esittely-osa h1{
             padding-top: 120px;
@@ -84,25 +68,21 @@
             padding-top: 40px;
             padding-bottom: 60px;
         }
-
         .kategoriat-osa h2{
             padding-top: 50px;
-            padding-bottom: 50px;
-                   
+            padding-bottom: 50px;      
         }
+
         .kategoriat-osa .col-sm {
             padding-top: 20px;
             padding-bottom: 20px;
         }
-
-
         .kartta-osa {
             background-color: #7ed957;
         }
         .kartta-osa h2{
             padding-top: 40px;
-            padding-bottom: 20px;
-                   
+            padding-bottom: 20px;        
         }
         .kartta-osa iframe{
             padding-bottom: 50px;
@@ -117,13 +97,12 @@
         }
 
         ul {
-             text-align: left;
-             list-style-position: inside;
+            font-size: 20px;
+            text-align: left;
+            list-style-position: inside;
         }
 
         li a {
             text-decoration: none;
             font-weight:bold;
         }
-
-       
