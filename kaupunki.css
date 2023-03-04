@@ -35,7 +35,7 @@
   width: auto;
   height:  auto;
   transform: translateX(-50%) translateY(-50%);
-  opacity: 0.55;
+  opacity: 0.5;
   z-index: -1;
 }
 
