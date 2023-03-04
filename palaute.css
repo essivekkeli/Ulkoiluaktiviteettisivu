@@ -44,28 +44,9 @@
     font-size: 20px;
   }
 
-  .palauteteksti h1 {
+  #kysely h3 {
     padding-top: 50px;
-    padding-bottom: 50px;
-
-  }
-
-  .palaute {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
-
-  }
-
-  .form-group {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .form-check{
-    padding-top: 10px;
-    padding-bottom: 10px;
+   
   }
 
   .yhteystiedot h2{

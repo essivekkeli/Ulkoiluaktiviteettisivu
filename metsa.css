@@ -45,8 +45,10 @@
   padding: 10px 20px;
   background-color: #fff;
   color: #000;
+  text-align: center;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #000;
 }
 
 .koti a:hover {

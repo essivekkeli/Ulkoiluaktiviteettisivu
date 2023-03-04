@@ -47,6 +47,7 @@
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #000;
 }
 
 .mt-2 {

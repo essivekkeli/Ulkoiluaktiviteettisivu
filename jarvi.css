@@ -28,6 +28,7 @@
     position: absolute;
     content: "";
     background: url('melonta2.jpg') no-repeat center center fixed;
+    background-size: cover;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -46,6 +47,7 @@
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  border: 2px solid #000;
 }
 
 .koti a:hover {
